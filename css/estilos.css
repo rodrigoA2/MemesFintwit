@@ -30,7 +30,7 @@ h1 {
   gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   padding: 10px;
-  margin: 25px;
+  margin: 5px;
 }
 
 .tecla {
@@ -69,7 +69,10 @@ h1 {
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
 }
 .titulo-principal{
-  color: #cbcbd1;
+  padding: 160px 15px 10px 5px;
+  margin: 5px ;
+  color: rgb(255, 255, 255);
+  
   }
 
 .envie-audio{
@@ -81,12 +84,12 @@ h1 {
 footer{
   font-weight: bold;
   color: white;
-  margin: 50px;
-  padding: 10px;
+  margin: 20px;
+  padding: 5px;
 }
 .enviar-audio{
 	width:40%;
-	padding: 15px 0;
+  margin: 0 0 150px 0;
 	background: orange;
 	color: white;
 	font-weight: bold;
