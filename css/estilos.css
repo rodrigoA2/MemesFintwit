@@ -34,7 +34,7 @@ h1 {
 
 .tecla {
   background-color: var(--branca);
-  border-radius: 30px;
+  border-radius: 100px;
   box-shadow: 3px 3px 0 var(--cinza);
   color: var(--vermelha);
   cursor: pointer;
@@ -65,3 +65,6 @@ h1 {
 .tecla:active:focus {
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
 }
+.titulo-principal{
+  color: #cbcbd1;
+  }
