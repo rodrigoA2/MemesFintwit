@@ -27,14 +27,14 @@ h1 {
   box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
   border-radius: 30px;
   display: grid;
-  gap: 10px;
+  gap: 40px;
   grid-template-columns: repeat(3, 1fr);
   padding: 10px;
 }
 
 .tecla {
   background-color: var(--branca);
-  border-radius: 30px;
+  border-radius: 70px;
   box-shadow: 3px 3px 0 var(--cinza);
   color: var(--vermelha);
   cursor: pointer;
