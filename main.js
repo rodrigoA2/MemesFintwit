@@ -2,6 +2,7 @@ let audioAtual;
 
 function tocaSom(idElementoAudio) {
   // Pausa o áudio anterior, se existir
+  
   if (audioAtual) {
     audioAtual.pause();
   }
