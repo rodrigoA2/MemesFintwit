@@ -43,8 +43,16 @@
     <audio src="sounds/apanhando.wav" id="som_tecla_psh"></audio>
     <audio src="sounds/projetado.wav" id="som_tecla_tic"></audio>
     <audio src="sounds/BostaNenhuma.wav" id="som_tecla_tom"></audio>
+    
+    <footer>
+        <h2 class="envie-audio">Colobore com a gente, envie um audio:</h2>
+
+        <label for="audioFileChooser">Selecione arquivo de audio:</label><br><br>
+        <input  id="audioFileChooser" type="file" onchange="readFile(this.files);">
+    </footer>
 
     <script src="main.js"></script>
+    <script src="envioAudios"></script>
 
 </body>
 </html>
