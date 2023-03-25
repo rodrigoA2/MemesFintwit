@@ -9,6 +9,7 @@
 body {
   align-items: center;
   background: url(images/fintwit.jpg);
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -69,17 +70,17 @@ h1 {
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
 }
 .titulo-principal{
-  padding: 160px 15px 10px 5px;
+  padding: 25px 15px 10px 5px;
   margin: 5px ;
   color: rgb(255, 255, 255);
   
   }
 
 .envie-audio{
-  margin: 100px 0 60px;
+  margin: 15px 0 60px;
   color: aqua;
   font-size: 22px;
-  padding: 10px;
+  padding: 5px;
 }
 footer{
   font-weight: bold;
