@@ -104,3 +104,19 @@ footer{
 	background: darkorange;
 	transform: scale(1.2);
 }
+/* Para dispositivos móveis*/
+@media screen and (max-width: 480px){
+	.body, .teclado{
+		width: auto;
+		}
+	h1 {
+		text-align: center;
+	}
+	body{
+		position: static;
+	}
+	.body{
+		width: 100%;
+	}
+
+	}
