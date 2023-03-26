@@ -109,9 +109,10 @@ footer{
 /* Para dispositivos móveis*/
 @media (max-width: 800px){
 .teclado, .tecla{
-		min-width: 100%;
+		  min-width: 100%;
     flex-direction: column;
     width: 100%;
+    font-size: 100%;
     padding: 10px;
     margin: 5px;
     align-content: center;
