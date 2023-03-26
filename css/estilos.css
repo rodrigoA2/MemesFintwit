@@ -22,14 +22,7 @@ h1 {
   margin-bottom: 30px;
   font-size: 3rem;
 }
-.titulo-principal{
-  align-content: center top;
-  padding: 10px;
-  margin: 25px;
-  height: 100%;
-  text-align: center;
 
-}
 .teclado {
   height: 100%;
   background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
@@ -39,7 +32,7 @@ h1 {
   gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   padding: 10px;
-  margin: 25px;
+  margin: 45px;
 }
 
 .tecla {
@@ -81,6 +74,7 @@ h1 {
   padding: 25px 15px 10px 5px;
   margin: 5px ;
   color: rgb(255, 255, 255);
+  text-align: center;
   
   }
 
