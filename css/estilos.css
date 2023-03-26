@@ -24,6 +24,7 @@ h1 {
 }
 
 .teclado {
+  height: 100%;
   background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
   box-shadow: 6px 8px 5px 6px #666, 10px 10px 10px #000,6px 8px 5px 6px #666;
   border-radius: 30px;
@@ -31,7 +32,7 @@ h1 {
   gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   padding: 10px;
-  margin: 5px;
+  margin: 45px;
 }
 
 .tecla {
@@ -105,9 +106,9 @@ footer{
 	transform: scale(1.2);
 }
 /* Para dispositivos móveis*/
-@media screen and (max-width: 480px){
-	.body, .teclado{
-		width: auto;
+@media (max-width: 800px){
+	.estrutura-principal .teclado{
+		min-width: flex;
 		}
 	h1 {
 		text-align: center;
@@ -116,7 +117,7 @@ footer{
 		position: static;
 	}
 	.body{
-		width: 100%;
+		height: 450px;
 	}
-
-	}
+}
+	
