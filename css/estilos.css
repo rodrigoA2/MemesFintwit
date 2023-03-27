@@ -109,7 +109,7 @@ footer{
 /* Para dispositivos móveis*/
 @media (max-width: 800px){
 .teclado, .tecla{
-		  min-width: 100%;
+		min-width: 100%;
     flex-direction: column;
     width: 100%;
     font-size: 100%;
@@ -118,6 +118,8 @@ footer{
     align-content: center;
     align-items: center;
     border: 1px solid aqua;
+    text-align: center;
+    
  
 		}
 	h1 {
@@ -130,6 +132,8 @@ footer{
 	body, footer{
 		position:relative ;
     height: 450px;
+    display: flex;
+    justify-content: space-between;
 	}
 
 
