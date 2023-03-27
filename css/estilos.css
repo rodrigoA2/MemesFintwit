@@ -36,6 +36,17 @@ h1 {
   margin: 45px;
 }
 
+.compartilhar-zap{
+  background-color: #25D366; /* cor de fundo do botão */
+  color: #fff; /* cor do texto do botão */
+  border: none; /* remover a borda do botão */
+  padding: 10px 15px; /* espaçamento interno do botão */
+  border-radius: 5px; /* arredondamento das bordas do botão */
+  font-size: 16px; /* tamanho da fonte do texto */
+  cursor: pointer; /* mudar o cursor do mouse ao passar sobre o botão */
+  margin: 0 50px 0 180px;
+}
+
 .tecla {
   background-color: var(--branca);
   border: 2px solid #666;

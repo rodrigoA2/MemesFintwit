@@ -17,12 +17,12 @@ function tocaSom(idElementoAudio, idBotao) {
   audioAtual = audioElemento;
 
   audioElemento.addEventListener("timeupdate", function() {
-    const elementoProgresso = document.getElementById("progresso");
+  
     const elementoBotao = document.getElementById(idBotao);
     const duracaoTotal = audioElemento.duration;
     const tempoAtual = audioElemento.currentTime;
     const porcentagemCompleta = (tempoAtual / duracaoTotal) * 100;
-    elementoProgresso.style.width = `${porcentagemCompleta}%`;
+ 
     elementoBotao.style.backgroundImage = "linear-gradient(to right, #97DEFF " + audioElemento.currentTime / audioElemento.duration * 100 + "%, #C9EEFF " + audioElemento.currentTime / audioElemento.duration * 100 + "%)";
   });
 }
