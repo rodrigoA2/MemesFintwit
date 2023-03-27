@@ -1,6 +1,6 @@
 
 let audioAtual;
-function tocaSom(idElementoAudio) {
+function tocaSom(idElementoAudio, idBotao) {
 
     // Pausa o áudio anterior, se existir
   
@@ -16,10 +16,12 @@ function tocaSom(idElementoAudio) {
 
   audioElemento.addEventListener("timeupdate", function() {
     const elementoProgresso = document.getElementById("progresso");
+    const elementoBotao = document.getElementById(idBotao);
     const duracaoTotal = audioElemento.duration;
     const tempoAtual = audioElemento.currentTime;
     const porcentagemCompleta = (tempoAtual / duracaoTotal) * 100;
     elementoProgresso.style.width = `${porcentagemCompleta}%`;
+    elementoBotao.style.backgroundImage = "linear-gradient(to right, #ff0000 " + audioElemento.currentTime / audioElemento.duration * 100 + "%, #ffffff " + audioElemento.currentTime / audioElemento.duration * 100 + "%)";
   });
 }
 
@@ -28,9 +30,11 @@ const listaDeTeclas = document.querySelectorAll('.tecla');
 for (let contador = 0; contador < listaDeTeclas.length; contador++) {
   const tecla = listaDeTeclas[contador];
   const instrumento = tecla.classList[1];
+  const idBotao = listaDeTeclas[contador].id;
   const idAudio = `#som_${instrumento}`;
   
   tecla.onclick = function() {
-    tocaSom(idAudio);
+    tocaSom(idAudio, idBotao);
+    console.log(idBotao)
   };
 }
