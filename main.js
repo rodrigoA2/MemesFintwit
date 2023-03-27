@@ -6,6 +6,8 @@ function tocaSom(idElementoAudio, idBotao) {
   
   if (audioAtual) {
     audioAtual.pause();
+   // audioAtual.currentTime =0;
+   // audioAtual.removeAttribute('src');
   }
 
   const audioElemento = document.querySelector(idElementoAudio);
@@ -21,7 +23,7 @@ function tocaSom(idElementoAudio, idBotao) {
     const tempoAtual = audioElemento.currentTime;
     const porcentagemCompleta = (tempoAtual / duracaoTotal) * 100;
     elementoProgresso.style.width = `${porcentagemCompleta}%`;
-    elementoBotao.style.backgroundImage = "linear-gradient(to right, #ff0000 " + audioElemento.currentTime / audioElemento.duration * 100 + "%, #ffffff " + audioElemento.currentTime / audioElemento.duration * 100 + "%)";
+    elementoBotao.style.backgroundImage = "linear-gradient(to right, #97DEFF " + audioElemento.currentTime / audioElemento.duration * 100 + "%, #C9EEFF " + audioElemento.currentTime / audioElemento.duration * 100 + "%)";
   });
 }
 
