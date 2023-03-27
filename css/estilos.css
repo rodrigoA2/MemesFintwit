@@ -78,12 +78,12 @@ h1 {
   
   }
 
-.envie-audio{
-  margin: 15px 0 60px;
-  color: aqua;
-  font-size: 22px;
-  padding: 5px;
-}
+  .envie-audio{
+    margin: 15px 0 60px;
+    color: aqua;
+    font-size: 22px;
+    padding: 5px;
+  }
 footer{
   font-weight: bold;
   color: white;
@@ -122,6 +122,10 @@ footer{
 	h1 {
 		text-align: center;
 	}
+  .envie-audio{
+    margin: 85px 0 50px 0;
+    text-align: justify;
+  }
 	body, footer{
 		position:static;
     height: 450px;
