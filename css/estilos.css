@@ -108,7 +108,20 @@ footer{
 }
 /* Para dispositivos móveis*/
 @media (max-width: 800px){
-.teclado, .tecla{
+	body, footer{
+		position:relative ;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+	}
+	h1 {
+		text-align: center;
+	}
+  .envie-audio{
+    margin: 120px 0 50px 0;
+    text-align: justify;
+  }
+  .teclado, .tecla{
 		min-width: 100%;
     flex-direction: column;
     width: 100%;
@@ -119,23 +132,6 @@ footer{
     align-items: center;
     border: 1px solid aqua;
     text-align: center;
-    
- 
 		}
-	h1 {
-		text-align: center;
-	}
-  .envie-audio{
-    margin: 120px 0 50px 0;
-    text-align: justify;
-  }
-	body, footer{
-		position:relative ;
-    height: 450px;
-    display: flex;
-    justify-content: space-between;
-	}
-
-
 }
 	
