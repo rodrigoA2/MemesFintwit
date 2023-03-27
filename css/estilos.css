@@ -8,8 +8,9 @@
 
 body {
   align-items: center;
-  background: url(images/fintwit.jpg);
-  background-size: cover;
+  background: url(images/background.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -25,7 +26,7 @@ h1 {
 
 .teclado {
   height: 100%;
-  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  background: linear-gradient(to bottom, #eeeeee 0%,#1A5F7A 100%);
   box-shadow: 6px 8px 5px 6px #666, 10px 10px 10px #000,6px 8px 5px 6px #666;
   border-radius: 30px;
   display: grid;
@@ -38,9 +39,9 @@ h1 {
 .tecla {
   background-color: var(--branca);
   border: 2px solid #666;
-  border-radius: 100px;
+  border-radius: 40px;
   box-shadow: 3px 3px 0 var(--cinza);
-  color: var(--vermelha);
+  color: #1A5F7A;
   cursor: pointer;
   height: 120px;
   font-size: 100%;
@@ -48,10 +49,7 @@ h1 {
   line-height: 120px;
   text-align: center;
   width: 120px;
-
 }
-
-.tecla.ativa,
 .tecla:active {
   background-color: var(--vermelha);
   border: 4px solid  var(--vermelha);
@@ -59,36 +57,33 @@ h1 {
   color: var(--branca);
   outline: none;
 }
-
-.tecla.focus,
 .tecla:focus {
   outline: none;
-  box-shadow: 1px 1px 10px var(--luz);
+  box-shadow: 1px 1px 18px var(--luz);
 }
 
-.tecla.active:focus,
-.tecla:active:focus {
-  box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
-}
 .titulo-principal{
   padding: 25px 15px 10px 5px;
   margin: 5px ;
   color: rgb(255, 255, 255);
   text-align: center;
-  
   }
-
   .envie-audio{
+    align-items: center;
+    display: flex;
     margin: 15px 0 60px;
     color: aqua;
     font-size: 22px;
+    padding: 5px;
+    margin: 15px 0 20px;
+    font-size: 25px;
     padding: 5px;
   }
 footer{
   font-weight: bold;
   color: white;
-  margin: 20px;
-  padding: 5px;
+  margin: 5px;
+  padding: 2px;
 }
 .enviar-audio{
 	width:40%;
@@ -100,7 +95,7 @@ footer{
 	border: none;
 	border-radius: 5px;
 	transition: 1s all;
-	cursor: pointer;;
+	cursor: pointer;
 }
 .enviar-audio:hover{
 	background: darkorange;
