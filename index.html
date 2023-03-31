@@ -20,6 +20,15 @@
     <div>
         <h1 class="titulo-principal">Memes Fintwit</h1>
 
+        <section class="videos">
+            <h2>HOJE É SEXTA-FEIRA!!</h2>
+            
+            <video controls>
+                <source src="videos/sextafeira.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento <code>video</code>.
+            </video>
+        </section>    
+
         <section class="teclado">
             <button class="tecla tecla_maximo" id="maximo">Máximo</button>
             <button class="tecla tecla_pesado" id="pesado">Pesado</button>
@@ -70,21 +79,25 @@
             <audio src="sounds/vainao.mp3" id="som_tecla_vainao"></audio>
             <audio src="sounds/acaba.mp3" id="som_tecla_acaba"></audio>
             <audio src="sounds/guiputo.mp3" id="som_tecla_puto"></audio>
+        </section>
 
-     </section>
-   <button class="compartilhar-zap" onclick="window.location.href='whatsapp://send?text='+encodeURIComponent(location.href)" type="button">Compartilhar no WhatsApp</button>
+
+       <button class="compartilhar-zap" onclick="window.location.href='whatsapp://send?text='+encodeURIComponent(location.href)" type="button">Compartilhar no WhatsApp</button>
     </div>
 
-  <!--  <footer>
-        <form action="processa_upload" method="post" enctype="multipart/form-data">
+    <footer>
+     
+      
+      
+       <!-- <form action="processa_upload" method="post" enctype="multipart/form-data">
         <h2 class="envie-audio">Colobore com a gente, envie um audio:</h2>
 
         <label for="audioFileChooser">Selecione arquivo de audio:</label><br><br>
         <input  id="audioFileChooser" type="file" onchange="readFile(this.files);">
         
         <input type="submit" value="Enviar Audio" class="enviar-audio">
-        </form>  
-    </footer>-->
+        </form>  -->
+    </footer>
     
 
     <script src="main.js"></script>

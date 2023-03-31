@@ -55,7 +55,22 @@ body {
   outline: none;
   box-shadow: 1px 1px 18px var(--luz);
 }
-
+ video{
+  width: 60%; /* Define a largura do vídeo para 100% da largura do contêiner pai */
+  height: auto; /* Define a altura do vídeo para se ajustar automaticamente à largura */
+  border-radius: 20px; /* Adiciona um raio de borda ao elemento de vídeo */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Adiciona uma sombra à volta do elemento de vídeo */
+  margin: auto;
+  align-content: center;
+  align-items: center;
+  display: flex;
+}
+h2{
+  font-size: 12;
+  color: aqua;
+  text-align: center;
+  margin: 15px;
+}
 .titulo-principal{
   padding: 25px 15px 10px 5px;
   text-align: center;
@@ -145,6 +160,7 @@ footer{
     width: 120px;
     gap: 2px;
  }
+
  .compartilhar-zap{
   background-color: #25D366; /* cor de fundo do botão */
   color: #fff; /* cor do texto do botão */
