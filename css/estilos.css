@@ -64,12 +64,14 @@ body {
   align-content: center;
   align-items: center;
   display: flex;
+  padding: 5px;
 }
 h2{
   font-size: 12;
   color: aqua;
   text-align: center;
   margin: 15px;
+  padding: 10px;
 }
 .titulo-principal{
   padding: 25px 15px 10px 5px;
@@ -128,10 +130,9 @@ footer{
 @media (max-width: 800px){
 	body, footer{
 
-    height: 450px;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    margin: 5px;
 	}
   .teclado {
     height: 100%;
@@ -139,28 +140,23 @@ footer{
     box-shadow: 6px 8px 5px 6px #666, 10px 10px 10px #000,6px 8px 5px 6px #666;
     border-radius: 30px;
     display: grid;
-    gap: 5px;
     grid-template-columns: repeat(3, 1fr);
-    padding: 10px;
-    margin: 5px;
+
   }
   
   .tecla {
     background-color: var(--branca);
     border: 2px solid #666;
-    border-radius: 40px;
+    border-radius: 20px;
     box-shadow: 3px 3px 0 var(--cinza);
     color: #1A5F7A;
-    cursor: pointer;
     height: 120px;
+    width: 120px;
     font-size: 100%;
     font-weight: bold;
-    line-height: 120px;
     text-align: center;
-    width: 120px;
-    gap: 2px;
+ 
  }
-
  .compartilhar-zap{
   background-color: #25D366; /* cor de fundo do botão */
   color: #fff; /* cor do texto do botão */
@@ -169,9 +165,16 @@ footer{
   border-radius: 5px; /* arredondamento das bordas do botão */
   font-size: 12px; /* tamanho da fonte do texto */
   cursor: pointer; /* mudar o cursor do mouse ao passar sobre o botão */
-  margin: 90px;
+  margin: 0 130px;
   align-items: center;
   align-content: center;
+}
+h2{
+  font-size: 12;
+  color: aqua;
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
 }
 }
 	
